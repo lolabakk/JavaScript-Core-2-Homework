@@ -1,21 +1,20 @@
-/*
 
-The objects below have some syntax issues - try and fix them all!
 
-*/
+//The objects below have some syntax issues - try and fix them all!
 
 let kitten = {
-    fur colour: "orange",
-    age "23"
+    furColour: "orange",
+    age: "23"
 };
 
-let laptop =
+let laptop = { 
     brand: "Lenovo"
-    ram "5GB"
-}
+    RAM: "5GB"
+};
 
 let phone = {
-    operating system "iOS",
+    operatingSystem: "iOS",
     hasStylus: true,
-    megapixels 12
-    "batteryLife": "24 hours"
+    megaPixels: 12,
+    batteryLife: "24 hours"
+};

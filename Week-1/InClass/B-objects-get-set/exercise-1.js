@@ -11,6 +11,17 @@ let kitten = {
 // YOUR CODE GOES BELOW HERE
 
 
+kitten.ageMonths = 3;
+kitten.isFemale = true;
+kitten.furColour = "brown";
+
+console.log(kitten.ageMonths);
+console.log(kitten.isFemale);
+console.log(kitten.furColour)
+
+
+   
+
 
 
 

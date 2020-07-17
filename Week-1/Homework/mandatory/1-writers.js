@@ -14,31 +14,47 @@ let writers = [
     lastName: "Woolf",
     occupation: "writer",
     age: 59,
-    alive: false
+    alive: false,
   },
   {
     firstName: "Zadie",
     lastName: "Smith",
     occupation: "writer",
     age: 41,
-    alive: true
+    alive: true,
   },
   {
     firstName: "Jane",
     lastName: "Austen",
     occupation: "writer",
     age: 41,
-    alive: false
+    alive: false,
   },
   {
     firstName: "bell",
     lastName: "hooks",
     occupation: "writer",
     age: 64,
-    alive: true
-  }
+    alive: true,
+  },
 ];
 
 /*
 If you want an extra challenge, only `console.log()` the writers that are alive.
 */
+
+// let writerdetails = writers.forEach(function(writer){
+//   console.log(`Hi, my name is ${writer.firstName} ${writer.lastName}. I am ${writer.age} years old, and work as a ${writer.occupation}.`);
+
+// })
+function isWriterAlive(writers) {
+  return writers.alive === true;
+}
+let aliveWriter = writers.filter(isWriterAlive);
+aliveWriter.forEach(function (writer) {
+  console.log(
+    `Hi, my name is ${writer.firstName} ${writer.lastName}. I am ${writer.age} years old, and work as a ${writer.occupation}.`
+  );
+});
+
+
