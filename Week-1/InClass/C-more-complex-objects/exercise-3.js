@@ -30,8 +30,11 @@ let parkAvenueHouse = {
   WRITE YOUR CODE BELOW
 */
 
+
 // returns the full name (first name + last name) of the owner of the house
 function getOwnerFullName(house) {
+  house.currentOwner.firstName = "Marie";
+  house.currentOwner.lastName = "McDonald";
 
 }
 

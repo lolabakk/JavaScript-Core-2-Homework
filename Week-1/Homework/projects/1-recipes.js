@@ -22,4 +22,13 @@ cocoa
 
 **/
 
-let recipes = {};
+let recipes = {
+    foodName: "Fried Rice",
+    ingredients: ["cinnamon", "cumin", "Rice", "tomatoes", "oil"],
+    serves: 2,
+    addSeasoning: true
+};
+console.log(recipes.foodName);
+console.log(recipes["ingredients"]);
+console.log(recipes.serves);
+console.log(recipes.addSeasoning);
