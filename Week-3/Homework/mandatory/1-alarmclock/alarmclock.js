@@ -1,4 +1,22 @@
-function setAlarm() {}
+function setAlarm() {
+  let second = parseInt(document.getElementById("alarmSet").value);
+  let timeRem = document.getElementById("timeRemaining");
+  let id = setInterval(() => {
+    if (second <= 0) {
+      timeRem.innerText = "alarm";
+      playAlarm();
+      clearInterval(id);
+    } else {
+      timeRem.innerText = `Time Remaining: ${second}`;
+      second = second - 1;
+    }
+
+  }, 1000);
+}
+
+
+
+
 
 // DO NOT EDIT BELOW HERE
 
