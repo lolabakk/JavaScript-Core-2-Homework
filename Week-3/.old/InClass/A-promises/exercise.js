@@ -14,8 +14,11 @@
   Promise"
 */
 function exercise1() {
-  var promise1 = resolvedPromise()
+  var promise1 = resolvedPromise();
+  console.log(resolvedPromise("A Promising Promise"));
+
 }
+exercise1(resolvedPromise);
 
 /*
   EXERCISE 2
